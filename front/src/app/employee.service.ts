@@ -8,7 +8,7 @@ import { environment } from '../environments/environment';
   providedIn: 'root'
 })
 export class EmployeeService {
-  private apiServeUrl = environment.apiServeUrl;
+  private apiServeUrl = 'http://localhost:8080';
 
   constructor(private http: HttpClient) { }
 
