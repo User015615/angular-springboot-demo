@@ -1,0 +1,5 @@
+Steps to launch frontend in VSCode : 
+Go to the \front folder, then launch with \ng serve
+
+ > cd .\front\
+ > ng serve 
