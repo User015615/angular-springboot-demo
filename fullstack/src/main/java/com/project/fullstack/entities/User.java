@@ -1,5 +1,6 @@
 package com.project.fullstack.entities;
 
+import com.project.fullstack.dto.UserDto;
 import com.project.fullstack.enums.UserRole;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -62,6 +63,14 @@ public class User implements UserDetails {
         return false;
     }
 
+    public UserDto getUserDto() {
+        UserDto userDto = new UserDto();
+        userDto.setId(this.id);
+        userDto.setEmail(this.email);
+        userDto.setName(this.name);
+        userDto.setUserRole(this.userRole); // Corrected line
+        return userDto;
+    }
 
 
 }
